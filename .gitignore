@@ -19,7 +19,7 @@ pnpm-debug.log*
 
 # Tina CMS
 .tina/__generated__
-admin/
+/admin/
 
 # macOS-specific files
 .DS_Store

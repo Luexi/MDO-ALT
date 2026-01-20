@@ -15,8 +15,5 @@
     "svelte": "^5.47.1",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
-  },
-  "optionalDependencies": {
-    "better-sqlite3": "^12.6.2"
   }
 }
