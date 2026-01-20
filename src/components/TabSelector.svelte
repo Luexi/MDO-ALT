@@ -1,30 +1,30 @@
 <script lang="ts">
 	export let tabs: { id: string; label: string; content: string }[];
-	let activeTab = tabs[0]?.id || '';
+	let activeTab = tabs[0]?.id || "";
 </script>
 
 <div class="w-full">
 	<!-- Tab Buttons -->
-	<div class="flex flex-wrap gap-2 mb-8 p-1 bg-gray-100 rounded-pill">
+	<div class="flex flex-wrap border-b border-gray-200 mb-12">
 		{#each tabs as tab}
 			<button
-				class={`flex-1 px-6 py-3 rounded-pill font-bold text-sm transition-all ${
+				class={`px-8 py-4 font-display font-bold text-lg transition-all border-b-4 ${
 					activeTab === tab.id
-						? 'bg-uagro-navy text-white shadow-md'
-						: 'text-gray-600 hover:text-gray-900 hover:bg-white'
+						? "border-uagro-red text-uagro-red bg-gray-50"
+						: "border-transparent text-gray-400 hover:text-corporate-black hover:bg-gray-50"
 				}`}
-				on:click={() => activeTab = tab.id}
+				on:click={() => (activeTab = tab.id)}
 			>
 				{tab.label}
 			</button>
 		{/each}
 	</div>
-	
+
 	<!-- Tab Content -->
-	<div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+	<div class="bg-white p-6 md:p-10 border border-gray-100 min-h-[400px]">
 		{#each tabs as tab}
 			{#if activeTab === tab.id}
-				<div class="prose prose-lg max-w-none">
+				<div class="prose prose-lg max-w-none font-light text-gray-700">
 					{@html tab.content}
 				</div>
 			{/if}
