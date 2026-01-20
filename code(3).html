@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LIIES - UAGro</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#001f3d", // Navy Blue
+                        "uagro-red": "#8B0000", // Deep Red
+                        "background-light": "#f7f8fc",
+                        "background-dark": "#1e2939",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom subtle mesh animation or static background */
+        .mesh-background {
+            background-color: #f7f8fc;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(210, 100%, 12%, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(350, 80%, 30%, 0.08) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, hsla(210, 20%, 80%, 0.5) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, hsla(210, 100%, 12%, 0.05) 0px, transparent 50%);
+        }
+        .dark .mesh-background {
+            background-color: #1e2939;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(210, 100%, 80%, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(350, 80%, 50%, 0.1) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="font-display text-slate-800 dark:text-slate-200 antialiased selection:bg-uagro-red selection:text-white">
+<div class="relative min-h-screen w-full flex flex-col mesh-background overflow-x-hidden transition-colors duration-300">
+<!-- Navbar -->
+<div class="w-full px-4 pt-6 z-50">
+<nav class="mx-auto max-w-5xl rounded-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-white/40 dark:border-white/5 flex items-center justify-between px-6 py-3 transition-all duration-300 hover:shadow-lg">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 bg-primary text-white rounded-full">
+<!-- Logo Icon -->
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<span class="text-primary dark:text-white text-lg font-bold tracking-tight">UAGro</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors" href="#">Inicio</a>
+<a class="text-sm font-bold text-primary dark:text-white bg-primary/5 dark:bg-white/10 px-3 py-1 rounded-full" href="#">LIIES</a>
+<a class="text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors" href="#">Profesores</a>
+<a class="text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-white transition-colors" href="#">Contacto</a>
+</div>
+<div class="flex items-center gap-3">
+<button class="md:hidden p-2 text-slate-600 hover:text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-9 border-2 border-white shadow-sm cursor-pointer" data-alt="Profile picture of a student or professor" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1s6D7mR7H2t9H9859fiTcz4s5Ca8_5kxEEtyZpTFhr6hpZgtD-nDmHweGgV1_1duk46TNw4scJ-XnRmCB-MTUevJJ1UEBowZrlGsLLqMIqbU14pbjmDmdEgbSmImYPt830I07WhMToHo4EU9n6PHKQu5lbsPGExFmEQpVEmFP4R_6YoOpZR0uoive-Cd0Qf8306xff1_fN6ocrO6bdCdLyWE8D-bXgsBsma7vOZWvSAcZfpVFb5bLCK35pAj7E5B6qgRHxxIQwz4");'>
+</div>
+</div>
+</nav>
+</div>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col items-center justify-center px-4 py-12 md:py-20 relative z-10">
+<!-- Floating Decorative Elements -->
+<div class="absolute top-1/4 left-[10%] text-uagro-red/10 dark:text-uagro-red/20 animate-pulse hidden lg:block">
+<span class="material-symbols-outlined text-9xl select-none">manage_search</span>
+</div>
+<div class="absolute bottom-1/4 right-[10%] text-primary/5 dark:text-white/5 hidden lg:block">
+<span class="material-symbols-outlined text-[10rem] select-none">analytics</span>
+</div>
+<div class="w-full max-w-4xl flex flex-col items-center">
+<!-- Heading Group -->
+<div class="text-center mb-10 max-w-3xl space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-xs font-bold uppercase tracking-widest mb-2">
+                        Maestría en Gestión de la Organización
+                    </div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary dark:text-white leading-[1.1] tracking-tight">
+                        Líneas de Investigación e Incidencia Social
+                    </h1>
+</div>
+<!-- Content Card -->
+<div class="relative w-full">
+<!-- Subtle shadow/glow behind card -->
+<div class="absolute -inset-1 bg-gradient-to-r from-primary/20 via-uagro-red/10 to-primary/20 rounded-2xl blur opacity-70"></div>
+<div class="relative bg-white/95 dark:bg-slate-900/90 backdrop-blur-xl rounded-2xl p-8 md:p-12 shadow-xl border border-white/50 dark:border-white/10">
+<div class="flex flex-col md:flex-row gap-8">
+<!-- Decorative Left Column -->
+<div class="hidden md:flex flex-col items-center gap-4 pt-2">
+<div class="w-12 h-12 rounded-full bg-uagro-red/10 flex items-center justify-center text-uagro-red">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<div class="w-0.5 flex-1 bg-gradient-to-b from-uagro-red/20 to-transparent rounded-full min-h-[100px]"></div>
+</div>
+<!-- Text Content -->
+<div class="flex-1 space-y-6">
+<div class="flex items-center gap-3 md:hidden text-uagro-red mb-2">
+<span class="material-symbols-outlined">lightbulb</span>
+<span class="text-sm font-bold uppercase tracking-wide">Investigación</span>
+</div>
+<p class="text-lg md:text-xl font-medium text-slate-700 dark:text-slate-200 leading-relaxed">
+                                    Nuestras líneas de investigación representan el núcleo intelectual del programa, diseñadas para abordar los desafíos contemporáneos de la gestión organizacional. Fomentamos un enfoque multidisciplinario que trasciende la teoría pura, buscando generar un impacto tangible en el tejido social y económico de nuestra región.
+                                </p>
+<p class="text-base md:text-lg text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+                                    A través de proyectos colaborativos entre estudiantes, docentes y el sector productivo, exploramos nuevas metodologías de innovación, sustentabilidad y responsabilidad corporativa. Cada línea de investigación está rigurosamente estructurada para cultivar el pensamiento crítico y desarrollar soluciones estratégicas que respondan a las necesidades urgentes de un entorno global en constante evolución.
+                                </p>
+<!-- Call to action / Link -->
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-uagro-red hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 font-bold group transition-colors" href="#">
+                                        Explorar proyectos recientes
+                                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Additional Info Grid (Optional Surprise Element) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-12 opacity-80">
+<div class="flex items-center gap-3 p-4 rounded-xl bg-white/50 dark:bg-white/5 border border-white/20">
+<span class="material-symbols-outlined text-primary dark:text-white">groups</span>
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-semibold uppercase">Participantes</p>
+<p class="text-sm font-bold text-primary dark:text-white">Multidisciplinarios</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-xl bg-white/50 dark:bg-white/5 border border-white/20">
+<span class="material-symbols-outlined text-uagro-red">target</span>
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-semibold uppercase">Enfoque</p>
+<p class="text-sm font-bold text-primary dark:text-white">Incidencia Social</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-xl bg-white/50 dark:bg-white/5 border border-white/20">
+<span class="material-symbols-outlined text-primary dark:text-white">library_books</span>
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-semibold uppercase">Resultados</p>
+<p class="text-sm font-bold text-primary dark:text-white">Publicaciones</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/60 dark:border-white/5 bg-white/40 dark:bg-slate-900/40 backdrop-blur-sm mt-auto">
+<div class="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">© 2024 Universidad Autónoma de Guerrero</p>
+<div class="flex items-center gap-6">
+<a class="text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-white text-sm font-medium transition-colors" href="#">Política de Privacidad</a>
+<a class="text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-white text-sm font-medium transition-colors" href="#">Contacto</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

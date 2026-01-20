@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Instalaciones - Maestría en Gestión de Organizaciones</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#b36537",
+              "primary-dark": "#8a4d2a",
+              "background-light": "#f4f2f1", 
+              "background-dark": "#1b2232",
+              "uagro-navy": "#1E2B3E",
+              "uagro-red": "#9F2C2C",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"],
+              "body": ["Manrope", "sans-serif"],
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "md": "0.375rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+            backgroundImage: {
+               'mesh-gradient': "radial-gradient(at 0% 0%, rgba(30, 43, 62, 0.9) 0px, transparent 50%), radial-gradient(at 100% 0%, rgba(159, 44, 44, 0.4) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(224, 224, 224, 1) 0px, transparent 50%), radial-gradient(at 0% 100%, rgba(179, 101, 55, 0.1) 0px, transparent 50%), linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%)",
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        
+        /* Custom Masonry CSS as Tailwind doesn't have native masonry support yet */
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                column-count: 3;
+            }
+        }
+        
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen w-full bg-background-light dark:bg-background-dark overflow-x-hidden text-slate-800">
+<!-- Background Mesh Layer -->
+<div class="fixed inset-0 z-0 bg-mesh-gradient opacity-90 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col min-h-screen">
+<!-- Navigation -->
+<div class="px-4 py-6 flex justify-center sticky top-0 z-50">
+<header class="flex items-center justify-between w-full max-w-[1100px] bg-white/90 backdrop-blur-md border border-white/40 shadow-lg shadow-black/5 rounded-full px-6 py-3">
+<div class="flex items-center gap-3 text-[#171412]">
+<div class="size-8 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<span class="text-[#171412] text-sm md:text-base font-bold leading-tight tracking-[-0.015em] hidden sm:block">Maestría en Gestión</span>
+</div>
+<nav class="hidden md:flex flex-1 justify-center gap-1">
+<a class="px-4 py-2 text-slate-600 text-sm font-semibold hover:text-primary transition-colors rounded-full" href="#">Inicio</a>
+<a class="px-4 py-2 text-slate-600 text-sm font-semibold hover:text-primary transition-colors rounded-full" href="#">Programa</a>
+<a class="px-4 py-2 bg-primary text-white text-sm font-semibold rounded-full shadow-md shadow-primary/20" href="#">Instalaciones</a>
+<a class="px-4 py-2 text-slate-600 text-sm font-semibold hover:text-primary transition-colors rounded-full" href="#">Admisión</a>
+<a class="px-4 py-2 text-slate-600 text-sm font-semibold hover:text-primary transition-colors rounded-full" href="#">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="md:hidden p-2 text-slate-600">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<button class="hidden md:flex cursor-pointer items-center justify-center rounded-full h-10 px-5 bg-slate-900 text-white text-sm font-bold hover:bg-slate-800 transition-colors">
+                        Postularse
+                    </button>
+</div>
+</header>
+</div>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center w-full px-4 pb-20 pt-8">
+<div class="max-w-[1100px] w-full">
+<!-- Page Heading -->
+<div class="mb-12 text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-primary/20">
+<span class="material-symbols-outlined text-sm">domain</span>
+                        Campus Universitario
+                    </div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-4 drop-shadow-sm">
+                        Espacios para la <br class="hidden md:block"/>Excelencia Académica
+                    </h1>
+<p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
+                        Explora un entorno diseñado para inspirar, conectar y potenciar tu desarrollo profesional.
+                    </p>
+</div>
+<!-- Masonry Gallery -->
+<div class="masonry-grid mb-12">
+<!-- Item 1: Large Lecture Hall -->
+<div class="masonry-item group relative overflow-hidden rounded-2xl shadow-md cursor-pointer">
+<div class="aspect-[4/3] w-full bg-gray-200">
+<img alt="Modern university lecture hall with tiered seating and warm lighting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern university lecture hall with tiered seating and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbcbjuBHwGfp5hucVq9ePoKqa4LyUvFWo_yPDS390gt0o7qUWEHKAQCdttgWpleLY5DWr42EJO38mFWt4ysCVab52uMGiaAAwLyo_lS-J0zYDKVQiPLDihx6Kl1KwCGje6f5psY4A4-QPW2A9i_2HB60P6A5IVGKazs7RFOEFdbTDvCV1J0xqXkg1AELXBg5ghfxcQRc4t7uaAfF2mtX4Py88I4IvyfMUFT8oRUFUqF_AUpbyUb1tBRKJLTP5k9U9rJJ3Jfy6qy4M"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-medium text-lg">Auditorios Magistrales</p>
+</div>
+</div>
+<!-- Item 2: Library Vertical -->
+<div class="masonry-item group relative overflow-hidden rounded-2xl shadow-md cursor-pointer">
+<div class="aspect-[3/4] w-full bg-gray-200">
+<img alt="Students studying in a university library with tall bookshelves" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Students studying in a university library with tall bookshelves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7ssKfpT4McCoe3ihCp5x0Ll6Vu5ol6r2lawIH9fKMePtM970HoQs_f7VLDo9HQA9xYJR22fXrntjcfP-iKS5ASAe03J5gjHg6YSUFewW2JXpqlcl-s360pP6UdE8zPtfaQOUqNJvS0Mk1YcA_mbLLVuhrW6JdBESXE6vAscxYvPiEGFXDluP09on6qjqWc-5PoUgc76fXIlt8Ylmus501wx35zOrvMfNV9HW5jOYO7_tZMcT5CEZ-OX4KcPMz5b1LIM0Biz2r9qg"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-medium text-lg">Biblioteca Especializada</p>
+</div>
+</div>
+<!-- Item 3: Computer Lab -->
+<div class="masonry-item group relative overflow-hidden rounded-2xl shadow-md cursor-pointer">
+<div class="aspect-video w-full bg-gray-200">
+<img alt="Modern computer lab with desktop computers" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern computer lab with desktop computers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfUwh9kuRJVgyH1fo8a_B4HFJ59U8-SeMf6WykO763pipvYWYtINq65RkWncztBtxjEJydjXhYtorkso1fAJK5j3XjZx-VaaSnqzdeTlLHlZI9q2TTMZHUwJWz9bAzz_64R_vcvlGSMzLS1ZPIsj3N_PRX7QS2-txp9FKX988Kdyep3iWU_2RE_0T5-BmjL_ep7hQ52YgmQRTvE53cvwrkab1OXwEroeIenNDuXIb0ghMC9gub3Mj8cGzpd-5D7eDLP2VaLiVOdho"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-medium text-lg">Laboratorios de Cómputo</p>
+</div>
+</div>
+<!-- Item 4: Green Areas Vertical -->
+<div class="masonry-item group relative overflow-hidden rounded-2xl shadow-md cursor-pointer">
+<div class="aspect-[3/4] w-full bg-gray-200">
+<img alt="Lush green campus walkway with modern university building in background" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Lush green campus walkway with modern university building in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiqv3B0H7_dqD5EZhoeAeykYaxRfvXtjkGnOKsdmHYYaopoCK_jC8wIQbOZ2qYaNGLSTX5n2ZdaTTR0Pc60uP1NGa89nYryjKC_myfTBQZnEh44YH89v7J_kTN-dI_2jMNYIWkfiN5Vpx0gEG4ZwAWnozG1pKeo0GO2EFGfpB_hIIDIJ8S4w-FoHzz9HJqjb3jMIPMoDVWLkGlEVqTvjpnvxqxB5glF3BnOoyn05-bX-HB2UgxhpjuZYAOXht2bV4jDrF401El70Y"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-medium text-lg">Áreas Verdes y Esparcimiento</p>
+</div>
+</div>
+<!-- Item 5: Meeting Room -->
+<div class="masonry-item group relative overflow-hidden rounded-2xl shadow-md cursor-pointer">
+<div class="aspect-[4/3] w-full bg-gray-200">
+<img alt="Collaborative meeting room with glass walls and whiteboards" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Collaborative meeting room with glass walls and whiteboards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnwjhnm-dunrUQy_WwLN8zRlJjrfPqNxMaqMq3ySLx9cenPUiUNTPsaUAIEzrVBBRg-0CsWmu6d7HBeqUMaJ7YNjA1EFbduQGmi4kC42yxrVbkIdB7UKehxKCfJeNfkAth96t3U-2hGgFJ_prY6tHZA-6t2m-5MopH-phFiUyLMPMt9MM4RrmxZZyNZ7lwvRkj6t6EA67eITLLu1gVG4NeBUfqupvVNd2_TTSBiSiYodD4sLqs2IG2tB7BNfGdBrEBrzv12-cpWV8"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-medium text-lg">Salas de Trabajo Colaborativo</p>
+</div>
+</div>
+<!-- Item 6: Hallway/Interior -->
+<div class="masonry-item group relative overflow-hidden rounded-2xl shadow-md cursor-pointer">
+<div class="aspect-[16/10] w-full bg-gray-200">
+<img alt="Bright modern university hallway with seating areas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Bright modern university hallway with seating areas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmQuhrKVPT2KmwpGaqTRDgDYG5giBZHAIPacktLLMX0wT0scgvOBM9epRJO7x7RRCpeaX2Pz7J0UHf3ymkcIyzPhgZPkm1Kz6JkMYXKlYI3pPa33kcfC5Gqb09VsjXbdoU7H8EoM4jnO3kqzXwdrk1mfAf84rPh-lEL4I86vLGfTSIVJtvvpv4nkJ12IMfXEJ7ogFPifHhDnTs0v7HxdJ6t521xnmvfKCCvwdNKX_3UMEc7gWU1YZL5TZe6C_5wAZsOMEsRh3KyiA"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-medium text-lg">Espacios de Convivencia</p>
+</div>
+</div>
+</div>
+<!-- Floating Info Card -->
+<div class="w-full bg-white rounded-2xl shadow-2xl shadow-slate-200/50 p-8 md:p-12 relative overflow-hidden">
+<!-- Decorative corner accent -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-10 -mt-10"></div>
+<div class="grid md:grid-cols-2 gap-10 md:gap-16 relative z-10">
+<!-- Left Column: Description -->
+<div class="flex flex-col gap-6">
+<h2 class="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">
+                                Infraestructura que impulsa tu crecimiento
+                            </h2>
+<p class="text-slate-600 leading-relaxed text-base md:text-lg">
+                                Nuestras instalaciones están diseñadas para fomentar el aprendizaje y la colaboración multidisciplinaria. 
+                                Desde aulas modernas equipadas con la última tecnología hasta áreas de investigación especializadas, 
+                                cada espacio apoya tu crecimiento profesional en la Gestión de Organizaciones.
+                            </p>
+<p class="text-slate-600 leading-relaxed text-base md:text-lg">
+                                El campus ofrece un ambiente seguro y estimulante, ideal para el networking y el desarrollo de proyectos innovadores.
+                            </p>
+<div class="mt-4">
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors group" href="#">
+                                    Agendar una visita guiada
+                                    <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Amenities List -->
+<div class="bg-slate-50 rounded-xl p-8 border border-slate-100">
+<h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">star</span>
+                                Amenidades y Servicios
+                            </h3>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5 text-xl">check_circle</span>
+<span class="text-slate-700 font-medium">Aulas climatizadas y multimedia</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5 text-xl">check_circle</span>
+<span class="text-slate-700 font-medium">Biblioteca especializada con acceso digital</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5 text-xl">check_circle</span>
+<span class="text-slate-700 font-medium">Áreas de estudio colaborativo (Coworking)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5 text-xl">check_circle</span>
+<span class="text-slate-700 font-medium">Laboratorio de cómputo avanzado</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5 text-xl">check_circle</span>
+<span class="text-slate-700 font-medium">Auditorio audiovisual para conferencias</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5 text-xl">check_circle</span>
+<span class="text-slate-700 font-medium">Conexión WiFi de alta velocidad (Campus Wide)</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white border-t border-slate-200 mt-auto relative z-10">
+<div class="max-w-[1100px] mx-auto px-6 py-12 flex flex-col gap-8">
+<div class="flex flex-wrap items-center justify-center gap-6 md:justify-between">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined">school</span>
+</div>
+<span class="text-slate-900 font-bold">Maestría en Gestión UAGro</span>
+</div>
+<div class="flex gap-6 text-sm">
+<a class="text-slate-500 hover:text-primary transition-colors" href="#">Política de Privacidad</a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#">Términos de Uso</a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#">Contacto</a>
+</div>
+<div class="flex justify-center gap-4">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Facebook</span>
+<!-- SVG placeholder for icon -->
+<svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Twitter</span>
+<svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+</a>
+</div>
+</div>
+<div class="text-center">
+<p class="text-slate-400 text-sm">© 2024 Universidad Autónoma de Guerrero (UAGro). Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

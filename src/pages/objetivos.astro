@@ -1,0 +1,194 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.svelte';
+import Footer from '../components/Footer.svelte';
+import TabSelector from '../components/TabSelector.svelte';
+
+const tabs = [
+	{
+		id: 'ingreso',
+		label: 'Perfil de Ingreso',
+		content: `
+			<h3 class="text-2xl font-bold text-gray-900 mb-4">Requisitos de Ingreso</h3>
+			<p class="text-gray-600 mb-6">El aspirante a la Maestría en Dirección de Organizaciones deberá cumplir con lo siguiente:</p>
+			
+			<ul class="list-disc pl-6 space-y-2 mb-6 text-gray-600">
+				<li>Presentar un escrito de exposición de motivos que fundamente el interés en cursar la Maestría en Dirección de Organizaciones.</li>
+				<li>Aprobar el Examen Nacional de Ingreso (EXANI-III).</li>
+				<li>Presentar y defender un anteproyecto de titulación ante la comisión de admisión del posgrado.</li>
+				<li>Entregar currículum vitae con documentos comprobatorios y dos cartas de recomendación (laboral o académica).</li>
+				<li>Acreditar manejo del idioma inglés, al menos a nivel de comprensión de textos.</li>
+				<li>Comprobar dominio básico de herramientas y aplicaciones digitales.</li>
+				<li>Sostener entrevista personal con la comisión de admisión para exponer las razones de la postulación.</li>
+				<li>Presentar certificado médico expedido por el Servicio Médico Universitario o por instituciones de salud reconocidas.</li>
+				<li>Presentar originales del título, diploma o grado del nivel inmediato anterior, así como los certificados de estudios correspondientes.</li>
+				<li>Acreditar promedio mínimo de ocho (8.0) en la licenciatura.</li>
+				<li>Demostrar experiencia o vinculación en el campo profesional del programa.</li>
+				<li>Cumplir los trámites administrativos establecidos en la convocatoria de ingreso.</li>
+			</ul>
+			
+			<h4 class="text-xl font-bold text-gray-900 mb-3">Conocimientos y Habilidades Básicas</h4>
+			<p class="text-gray-600 mb-4">Se requiere contar con conocimientos básicos en administración, economía, mercadotecnia, finanzas, informática y estadística descriptiva.</p>
+		`
+	},
+	{
+		id: 'egreso',
+		label: 'Perfil de Egreso',
+		content: `
+			<h3 class="text-2xl font-bold text-gray-900 mb-4">Perfil del Egresado</h3>
+			<p class="text-gray-600 mb-6">El egresado es un profesionista capaz de trabajar en equipos multidisciplinarios, comprometido con el desarrollo local y regional, aplicando conocimientos y herramientas de vanguardia.</p>
+			
+			<h4 class="text-xl font-bold text-gray-900 mb-3">Conocimientos</h4>
+			<ul class="list-disc pl-6 space-y-2 mb-6 text-gray-600">
+				<li>Variables que inciden en la creación y desempeño de MiPyMEs.</li>
+				<li>Variables políticas y sociales del sector gubernamental.</li>
+				<li>Tecnologías de información e Inteligencia Artificial en las organizaciones.</li>
+				<li>Estrategias de mercadeo y comportamiento humano (liderazgo y motivación).</li>
+				<li>Metodologías para formulación y evaluación de proyectos de inversión.</li>
+			</ul>
+			
+			<h4 class="text-xl font-bold text-gray-900 mb-3">Habilidades</h4>
+			<ul class="list-disc pl-6 space-y-2 mb-6 text-gray-600">
+				<li>Desarrollar investigaciones con impacto económico y social.</li>
+				<li>Brindar consultoría para formular e implementar estrategias competitivas.</li>
+				<li>Dirigir eficientemente organizaciones aplicando técnicas administrativas pertinentes.</li>
+				<li>Dirigir y asesorar proyectos complejos con liderazgo.</li>
+				<li>Formar talentos humanos para mejorar el desempeño organizacional.</li>
+			</ul>
+
+			<h4 class="text-xl font-bold text-gray-900 mb-3">Valores</h4>
+			<ul class="list-disc pl-6 space-y-2 text-gray-600">
+				<li>Actuar con ética profesional y defender la responsabilidad social.</li>
+				<li>Promover liderazgo y motivación.</li>
+				<li>Compromiso con el desarrollo personal y profesional.</li>
+				<li>Valorar la conciencia social, el bien común y la diversidad.</li>
+			</ul>
+		`
+	}
+];
+---
+
+<BaseLayout 
+	title="Objetivos y Perfiles - MDO UAGro"
+	description="Conoce los objetivos del programa y los perfiles de ingreso y egreso de la Maestría en Dirección de Organizaciones."
+>
+	<Navbar client:load />
+	
+	<main class="min-h-screen bg-gray-50 py-12">
+		<div class="max-w-6xl mx-auto px-4 sm:px-6">
+			<!-- Page Header -->
+			<div class="text-center mb-12">
+				<div class="inline-flex items-center gap-2 px-3 py-1 rounded-pill bg-uagro-navy/10 text-uagro-navy text-xs font-bold uppercase tracking-wider mb-4">
+					Programa Académico
+				</div>
+				<h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+					Objetivos y Perfiles
+				</h1>
+				<p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+					Conoce los objetivos del programa y los perfiles de ingreso y egreso que caracterizan a nuestros estudiantes y egresados.
+				</p>
+			</div>
+			
+			<!-- Objective Section -->
+			<div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12 border-l-8 border-uagro-navy relative overflow-hidden">
+				<div class="absolute top-0 right-0 p-8 opacity-5">
+					<svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+					</svg>
+				</div>
+				<div class="relative z-10">
+					<h2 class="text-3xl font-bold mb-6 text-uagro-navy">Objetivo General del Programa</h2>
+					<p class="text-lg leading-relaxed text-gray-700 font-medium">
+						Formar personas con capacidades directivas y de investigación de alto nivel, competentes en el diseño, implementación y evaluación de modelos de gestión e intervención que optimicen el desempeño de las organizaciones, orientando sus resultados hacia la creación sostenible con impacto social en la región.
+					</p>
+				</div>
+			</div>
+			
+			<!-- Tab Content -->
+			<TabSelector tabs={tabs} client:load />
+			
+			<!-- Admission Process -->
+			<div class="mt-16">
+				<h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Proceso de Admisión</h2>
+				<div class="grid md:grid-cols-2 gap-8">
+					<div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+						<div class="flex items-center gap-4 mb-4">
+							<div class="flex-shrink-0 w-12 h-12 bg-uagro-navy rounded-xl flex items-center justify-center text-white font-bold text-xl">
+								1
+							</div>
+							<h3 class="text-xl font-bold text-gray-900">Registro en Línea</h3>
+						</div>
+						<p class="text-gray-600">
+							Completa tu registro en la plataforma electrónica y adjunta la documentación requerida.
+						</p>
+					</div>
+					
+					<div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+						<div class="flex items-center gap-4 mb-4">
+							<div class="flex-shrink-0 w-12 h-12 bg-uagro-navy rounded-xl flex items-center justify-center text-white font-bold text-xl">
+								2
+							</div>
+							<h3 class="text-xl font-bold text-gray-900">Examen EXANI III</h3>
+						</div>
+						<p class="text-gray-600">
+							Presenta el examen estandarizado de conocimientos del CENEVAL.
+						</p>
+					</div>
+					
+					<div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+						<div class="flex items-center gap-4 mb-4">
+							<div class="flex-shrink-0 w-12 h-12 bg-uagro-navy rounded-xl flex items-center justify-center text-white font-bold text-xl">
+								3
+							</div>
+							<h3 class="text-xl font-bold text-gray-900">Entrevista</h3>
+						</div>
+						<p class="text-gray-600">
+							Participa en una entrevista con el comité académico del programa.
+						</p>
+					</div>
+					
+					<div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+						<div class="flex items-center gap-4 mb-4">
+							<div class="flex-shrink-0 w-12 h-12 bg-uagro-red rounded-xl flex items-center justify-center text-white font-bold text-xl">
+								4
+							</div>
+							<h3 class="text-xl font-bold text-gray-900">Resultados</h3>
+						</div>
+						<p class="text-gray-600">
+							Consulta los resultados y formaliza tu inscripción al programa.
+						</p>
+					</div>
+				</div>
+				
+				<!-- CTA -->
+				<div class="mt-12 text-center">
+					<a 
+						href="/convocatoria" 
+						class="inline-flex items-center gap-2 px-8 py-4 bg-uagro-red hover:bg-uagro-red-dark text-white font-bold rounded-pill transition-all shadow-lg shadow-uagro-red/20"
+					>
+						Ver Convocatoria Completa
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+
+			<!-- Institutional Backing Section -->
+			<div class="mt-20 border-t border-gray-200 pt-12">
+				<div class="text-center mb-8">
+					<h2 class="text-xl font-bold text-gray-500 uppercase tracking-widest">Instituciones Participantes</h2>
+				</div>
+				<div class="flex flex-wrap items-center justify-center gap-12 opacity-70 hover:opacity-100 transition-opacity duration-300">
+					<img src="/logo-uagro.png" alt="UAGro" class="h-14 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all"/>
+					<div class="h-10 w-px bg-gray-300 hidden md:block"></div>
+					<img src="/logo-facultad.png" alt="Facultad de Contaduría y Administración" class="h-14 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all"/>
+					<div class="h-10 w-px bg-gray-300 hidden md:block"></div>
+					<img src="/logo-mdo.png" alt="Maestría en Dirección de Organizaciones" class="h-14 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all"/>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<Footer client:load />
+</BaseLayout>

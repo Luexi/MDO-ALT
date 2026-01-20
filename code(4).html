@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Núcleo Académico - UAGro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1B396A", // UAGro Navy
+                        secondary: "#991b1b", // UAGro Deep Red
+                        tertiary: "#6b7280", // Medium Gray
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1e293b",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'pill': '9999px',
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 20px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background-color: #475569;
+        }.cutout-img {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 transition-colors duration-300 min-h-screen">
+<div class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+<nav class="bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-md shadow-lg rounded-pill px-6 py-3 flex items-center justify-between w-full max-w-6xl border border-slate-200 dark:border-slate-700 transition-all">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs shadow-sm">
+                    UAGro
+                </div>
+<span class="font-bold text-lg tracking-tight hidden sm:block text-slate-900 dark:text-white">Maestría</span>
+</div>
+<div class="hidden md:flex items-center gap-1 lg:gap-2 text-sm font-medium text-slate-600 dark:text-slate-300">
+<a class="px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">Objetivos</a>
+<a class="px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">Perfiles</a>
+<a class="px-3 py-2 rounded-full bg-slate-100 dark:bg-slate-700 text-primary dark:text-blue-300 font-semibold transition-colors" href="#">Núcleo Académico</a>
+<a class="px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">LIES</a>
+<a class="px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">Repositorio</a>
+<a class="px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">Instalaciones</a>
+</div>
+<a class="ml-4 bg-secondary hover:bg-red-800 text-white text-sm font-medium px-5 py-2.5 rounded-full shadow-md transition-transform transform hover:scale-105" href="#">
+                Conócenos
+            </a>
+<button class="md:hidden ml-2 text-slate-600 dark:text-slate-300">
+<span class="material-icons">menu</span>
+</button>
+</nav>
+</div>
+<main class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white mb-4">
+                Nuestro Núcleo Académico
+            </h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 font-light">
+                Un equipo de investigadores y docentes comprometidos con la excelencia educativa y el desarrollo científico de nuestra universidad.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+<div class="group flex flex-col">
+<div class="relative w-full aspect-square bg-primary rounded-lg overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
+<div class="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent"></div>
+<img alt="Dr. Roberto Méndez" class="absolute bottom-0 left-0 w-full h-[90%] object-cover object-top origin-bottom transform transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-nXD_5FbI3i0F06QPv7M99MeUo-_VkPVB3_r_vLXBfBFRtlKNtp26I97UTFa-23c7xdHsCrjCJYL17Y5QryHB4lyy02lho78Y6QNslf3H3nFRGT3NqANibvfEnsIa_nQ2V8gURPHWpylpdxItxoi7h7xWIKCVSRId2xKq2vIUwWbLhHvU9f0hJRTw4ueDSeT05lHm9K56aDZ77xIfqzocIcfTGvSjF5mc58T40lnIERCYrmfkmDzDMS8DqBBBzZHbQUdB0neARMo"/>
+</div>
+<div class="mt-5 text-left">
+<h3 class="text-xl font-bold text-primary dark:text-blue-400 mb-1">
+                        Dr. Roberto Méndez
+                    </h3>
+<p class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                        Doctor en Dirección de Organizaciones
+                    </p>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="relative w-full aspect-square bg-secondary rounded-lg overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
+<div class="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent"></div>
+<img alt="Dra. Elena Castillo" class="absolute bottom-0 left-0 w-full h-[90%] object-cover object-top origin-bottom transform transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFtCFJg6tOty-9sDoBNTDEF1VBhSJWo-vBQwgq03VrGxI7WCGY7-_lSaZq3deWrpoiogRkJuxlt3dYEsGAAfv6GRp4r888r8Ji9K7CxZpbFE8_4YgAKj0Na7BPMjnstDWeMQHUQ0EUMTGQtM-rihhNwvR6sxy5S68oiktE6GkDSlzGJp_Y0XaVDu1Z86rEq-oL4lKSfQvfZzAvPHLRDpQFJrjnzp6ZguaAtRZPGlTTkrqWXTBapLIgFT4ycxju-sGaRMZcbm_u9yo"/>
+</div>
+<div class="mt-5 text-left">
+<h3 class="text-xl font-bold text-primary dark:text-blue-400 mb-1">
+                        Dra. Elena Castillo
+                    </h3>
+<p class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                        Doctora en Ciencias Sociales
+                    </p>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="relative w-full aspect-square bg-tertiary rounded-lg overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
+<div class="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent"></div>
+<img alt="Mtro. Javier Solís" class="absolute bottom-0 left-0 w-full h-[90%] object-cover object-top origin-bottom transform transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgZIYpRu-K8wQeC_zBq4WDETsaAEsMdSXIAzVmPrjXyQQYsvkUGxQJwa9SgnZY88DA1GLrspV9JZjm1gTHLL_VaF4jDL0MwAMZR91WwssM6Asg60NMTtjwYI6IdmCyCl2eXQ8zAmnJsiLJwpKRnwRGRYqCTZARGtDaieKOLi3pPQni5MRes4fIPUvKNQEqcJY6jENhGDET23glV0VCvKpLGFF_9m3yZqSwGfSPanR623mpvQmvs4mJAjJB2X30XUlxGDB4lfdslrE"/>
+</div>
+<div class="mt-5 text-left">
+<h3 class="text-xl font-bold text-primary dark:text-blue-400 mb-1">
+                        Mtro. Javier Solís
+                    </h3>
+<p class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                        Maestro en Administración Pública
+                    </p>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="relative w-full aspect-square bg-primary rounded-lg overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
+<div class="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent"></div>
+<img alt="Dra. Sofia Vergara" class="absolute bottom-0 left-0 w-full h-[90%] object-cover object-top origin-bottom transform transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVk2Ou4r6OMumpSRhQwwY2H4oiiUZzPakchumaX6ohIV_8lzXLicZLkN6CGiJIkf9jFfF_2RtCg_OTnIeyioeB_D2jfM8i131Cdg5RBpVRl9ADonjff1cyDzWAjPACbPtwWb2NpCLpcWe5_wsv0fB_Y29zFACqxpwBfPmH5D_sHs0cGRhY-IhS2pZ23fxRFS-G_w9ED8u2B21cl3NigGEPVs8HdxoNv74SMH1cSo0I8a4C-ROiN5QOIK3L9phs5iV2VQno2e1Az7I"/>
+</div>
+<div class="mt-5 text-left">
+<h3 class="text-xl font-bold text-primary dark:text-blue-400 mb-1">
+                        Dra. Sofia Vergara
+                    </h3>
+<p class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                        Doctora en Economía Aplicada
+                    </p>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="relative w-full aspect-square bg-secondary rounded-lg overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
+<div class="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent"></div>
+<img alt="Dr. Carlos Fuentes" class="absolute bottom-0 left-0 w-full h-[90%] object-cover object-top origin-bottom transform transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_1BmwCYqvZ6_VYfdKJ1yluf9hdfQhsq02oGgL0_jdwVfH6QqJdIhjtXIe7u89UE9Bbk2mazz7Pna8UrqZqxDR0RJ_uvW2DYStvR8pDUkbb_WAyVRaFwcql9OUP4DAme_cvhKj7FevmQ5Cs9Zd9QXPrxbUMqL6-sFx-bcehH4HQKFpm1exEQ513nnyioRPlw99kqS5LQLAJMnI_tx8F3Sy9eLhJDTnVsbK-K0nzZnUgFuYXyaVzDJuupu6FX6hIQimY-Zq7ngdCAc"/>
+</div>
+<div class="mt-5 text-left">
+<h3 class="text-xl font-bold text-primary dark:text-blue-400 mb-1">
+                        Dr. Carlos Fuentes
+                    </h3>
+<p class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                        Doctor en Gestión Educativa
+                    </p>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="relative w-full aspect-square bg-tertiary rounded-lg overflow-hidden shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
+<div class="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent"></div>
+<img alt="Dra. Mariana López" class="absolute bottom-0 left-0 w-full h-[90%] object-cover object-top origin-bottom transform transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_eWLpOMoVGKIsvGyAwupLTkjlV-jrsWj8OUzAka9nH50KPBMHazryHJiCCxhcShmpcPOYAYjtJTx1TAqOiwphlF8EpRNTmCTgKOQejZS210hc880HYJ_v8RhOV71a42n4NuuoRevAkBzx1BFNtx3MuZ84U91dtpNIE5V3XDsUoWh3FxWj_KxCLlsJjXI9pWMrRLBAavMLeFP9o4pQXAvpkZX8VX17ni-L6sZFE99AQf-QHdQ38b8Qe_iXRKAzWoXRRrym0bidn1A"/>
+</div>
+<div class="mt-5 text-left">
+<h3 class="text-xl font-bold text-primary dark:text-blue-400 mb-1">
+                        Dra. Mariana López
+                    </h3>
+<p class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                        Doctora en Innovación Tecnológica
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-8">
+<div class="max-w-7xl mx-auto px-4 text-center">
+<p class="text-slate-500 dark:text-slate-400 text-sm">© 2023 Universidad Autónoma de Guerrero. Todos los derechos reservados.</p>
+</div>
+</footer>
+<script>
+        // Check local storage or system preference on load
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+</body></html>

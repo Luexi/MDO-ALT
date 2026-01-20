@@ -1,0 +1,228 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.svelte';
+import Footer from '../components/Footer.svelte';
+---
+
+<BaseLayout 
+	title="Plan de Estudios - MDO UAGro"
+	description="Conoce el plan de estudios de la Maestría en Dirección de Organizaciones de la UAGro."
+>
+	<Navbar client:load />
+	
+	<main class="min-h-screen bg-gray-50 py-12">
+		<div class="max-w-6xl mx-auto px-4 sm:px-6">
+			<!-- Page Header -->
+			<div class="text-center mb-12">
+				<div class="inline-flex items-center gap-2 px-3 py-1 rounded-pill bg-uagro-navy/10 text-uagro-navy text-xs font-bold uppercase tracking-wider mb-4">
+					Programa Académico
+				</div>
+				<h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+					Plan de Estudios
+				</h1>
+				<p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+					El programa de Maestría en Dirección de Organizaciones está estructurado en 4 semestres con un total de 141 créditos, combinando formación teórica, investigación aplicada y desarrollo de competencias directivas.
+				</p>
+			</div>
+			
+			<!-- Program Overview --> 
+			<div class="grid md:grid-cols-3 gap-6 mb-16">
+				<div class="bg-white rounded-2xl p-6 shadow-lg text-center border border-gray-100">
+					<div class="w-16 h-16 bg-uagro-navy rounded-xl flex items-center justify-center mx-auto mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+						</svg>
+					</div>
+					<p class="text-3xl font-extrabold text-uagro-navy mb-2">4</p>
+					<p class="text-sm text-gray-600 font-semibold">Semestres</p>
+				</div>
+				
+				<div class="bg-white rounded-2xl p-6 shadow-lg text-center border border-gray-100">
+					<div class="w-16 h-16 bg-uagro-red rounded-xl flex items-center justify-center mx-auto mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+						</svg>
+					</div>
+					<p class="text-3xl font-extrabold text-uagro-red mb-2">141</p>
+					<p class="text-sm text-gray-600 font-semibold">Créditos Totales</p>
+				</div>
+				
+				<div class="bg-white rounded-2xl p-6 shadow-lg text-center border border-gray-100">
+					<div class="w-16 h-16 bg-gray-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+						</svg>
+					</div>
+					<p class="text-3xl font-extrabold text-gray-700 mb-2">2</p>
+					<p class="text-sm text-gray-600 font-semibold">Años de Duración</p>
+				</div>
+			</div>
+			
+			<!-- Curriculum by Semester -->
+			<div class="space-y-8 mb-16">
+				<h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Mapa Curricular</h2>
+				
+				<!-- Semester 1 -->
+				<div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+					<div class="bg-uagro-navy text-white px-6 py-4">
+						<h3 class="text-xl font-bold">Primer Semestre</h3>
+					</div>
+					<div class="p-6">
+						<ul class="space-y-3">
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-navy/10 rounded-lg flex items-center justify-center text-uagro-navy font-bold text-sm shrink-0">1</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Dirección y liderazgo organizacional</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-navy/10 rounded-lg flex items-center justify-center text-uagro-navy font-bold text-sm shrink-0">2</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Diseño organizacional</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-navy/10 rounded-lg flex items-center justify-center text-uagro-navy font-bold text-sm shrink-0">3</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Mercadotecnia</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-navy/10 rounded-lg flex items-center justify-center text-uagro-navy font-bold text-sm shrink-0">4</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Trabajo de Grado I</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Semester 2 -->
+				<div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+					<div class="bg-uagro-navy text-white px-6 py-4">
+						<h3 class="text-xl font-bold">Segundo Semestre</h3>
+					</div>
+					<div class="p-6">
+						<ul class="space-y-3">
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-navy/10 rounded-lg flex items-center justify-center text-uagro-navy font-bold text-sm shrink-0">1</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Métodos y procesos administrativos</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-navy/10 rounded-lg flex items-center justify-center text-uagro-navy font-bold text-sm shrink-0">2</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Optativa I</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-navy/10 rounded-lg flex items-center justify-center text-uagro-navy font-bold text-sm shrink-0">3</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Estancia profesional I</p>
+									<p class="text-sm text-gray-500">18 créditos</p>
+								</div>
+							</li>
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-navy/10 rounded-lg flex items-center justify-center text-uagro-navy font-bold text-sm shrink-0">4</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Trabajo de Grado II</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Semester 3 -->
+				<div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+					<div class="bg-uagro-red text-white px-6 py-4">
+						<h3 class="text-xl font-bold">Tercer Semestre</h3>
+					</div>
+					<div class="p-6">
+						<ul class="space-y-3">
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-red/10 rounded-lg flex items-center justify-center text-uagro-red font-bold text-sm shrink-0">1</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Optativa II</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-red/10 rounded-lg flex items-center justify-center text-uagro-red font-bold text-sm shrink-0">2</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Estancia profesional II</p>
+									<p class="text-sm text-gray-500">18 créditos</p>
+								</div>
+							</li>
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-red/10 rounded-lg flex items-center justify-center text-uagro-red font-bold text-sm shrink-0">3</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Trabajo de grado III</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Semester 4 -->
+				<div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+					<div class="bg-uagro-red text-white px-6 py-4">
+						<h3 class="text-xl font-bold">Cuarto Semestre</h3>
+					</div>
+					<div class="p-6">
+						<ul class="space-y-3">
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-red/10 rounded-lg flex items-center justify-center text-uagro-red font-bold text-sm shrink-0">1</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Optativa III</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-red/10 rounded-lg flex items-center justify-center text-uagro-red font-bold text-sm shrink-0">2</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Trabajo de Grado IV</p>
+									<p class="text-sm text-gray-500">8 créditos</p>
+								</div>
+							</li>
+							<li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+								<span class="w-8 h-8 bg-uagro-red/10 rounded-lg flex items-center justify-center text-uagro-red font-bold text-sm shrink-0">3</span>
+								<div class="flex-1">
+									<p class="font-semibold text-gray-900">Retribución social</p>
+									<p class="text-sm text-gray-500">18 créditos</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Download Section -->
+			<div class="bg-gradient-to-br from-uagro-navy to-uagro-navy/90 text-white rounded-2xl shadow-2xl p-8 md:p-12 text-center">
+				<h2 class="text-2xl md:text-3xl font-bold mb-4">Descarga el Plan de Estudios Completo</h2>
+				<p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
+					Obtén información detallada sobre las materias, sus contenidos y los objetivos de aprendizaje de cada asignatura.
+				</p>
+				<a 
+					href="#" 
+					class="inline-flex items-center gap-3 bg-white text-uagro-navy font-bold py-4 px-8 rounded-pill hover:bg-gray-100 transition-all shadow-lg"
+				>
+					<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
+					</svg>
+					Descargar Plan de Estudios (PDF)
+				</a>
+			</div>
+		</div>
+	</main>
+	
+	<Footer client:load />
+</BaseLayout>

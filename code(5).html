@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UAGro - Maestría en Gestión de Organizaciones</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        uagro: {
+                            navy: "#1e3a8a", // Navy Blue
+                            red: "#9f1239",  // Deep Red
+                            gray: "#cbd5e1", // Soft Gray
+                        },
+                        primary: "#1e3a8a", 
+                        "background-light": "#f8fafc", 
+                        "background-dark": "#0f172a", 
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'pill': '50rem',
+                    },
+                    boxShadow: {
+                        'glow': '0 0 20px rgba(30, 58, 138, 0.2)', // Navy glow
+                        'glow-red': '0 0 20px rgba(159, 18, 57, 0.3)', // Red glow
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        .uagro-gradient {
+            background: 
+                radial-gradient(circle at 10% 10%, rgba(30, 58, 138, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 15%, rgba(159, 18, 57, 0.1) 0%, transparent 35%),
+                radial-gradient(circle at 50% 50%, rgba(203, 213, 225, 0.3) 0%, transparent 60%),
+                radial-gradient(circle at 20% 80%, rgba(159, 18, 57, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 80% 90%, rgba(30, 58, 138, 0.15) 0%, transparent 45%);
+            filter: blur(60px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 min-h-screen relative overflow-x-hidden transition-colors duration-300">
+<div class="fixed inset-0 z-0">
+<img alt="Soft gradient abstract background representing flow and serenity" class="w-full h-full object-cover opacity-20 dark:opacity-10 mix-blend-overlay transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRAqn4Q6272-oZ0MXM_sCra-rg7_G_Gc_0doXwRUnULYSAQP_0d3JnKPWBhiAwLqK5oqtvGminPyZrhU3iRvRQ-W87t29g6X2N4oZaRWHDTa_z8MDeDO7xj1UqNvyhF9w5Uh0BcJ-TYXTyIYxsnOJWTStAVNL5_sp9M2ej4oMXk3Bxtpeb61X0tIDivCTnlrI6URu_y4UxSI9TBGv2I-HphDHIa8uKgq4mw7yaLdA0A7RdbS1hP6p32pXKeZnRjczt4E_5gq8PaAY"/>
+<div class="absolute inset-0 uagro-gradient opacity-80 pointer-events-none"></div>
+<div class="absolute inset-0 bg-white/40 dark:bg-gray-900/60 pointer-events-none mix-blend-overlay"></div>
+</div>
+<div class="relative z-10 flex flex-col items-center w-full min-h-screen px-4 pt-6 md:pt-10 pb-12">
+<nav class="w-full max-w-[1200px] glass bg-white/90 dark:bg-gray-900/90 rounded-full px-4 py-3 md:px-6 md:py-3 shadow-lg shadow-uagro-navy/5 ring-1 ring-gray-900/5 dark:ring-white/10 flex justify-between items-center transition-all duration-300 animate-fade-in-down">
+<div class="flex items-center gap-2 pl-2">
+<span class="font-display font-bold text-xl md:text-2xl tracking-tight text-uagro-navy dark:text-white">
+                    UAGro
+                </span>
+</div>
+<div class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-600 dark:text-gray-300">
+<a class="hover:text-uagro-navy dark:hover:text-white transition-colors" href="#">Objetivos</a>
+<a class="hover:text-uagro-navy dark:hover:text-white transition-colors" href="#">Perfiles</a>
+<a class="hover:text-uagro-navy dark:hover:text-white transition-colors" href="#">Núcleo Académico</a>
+<a class="hover:text-uagro-navy dark:hover:text-white transition-colors" href="#">LIES</a>
+<a class="hover:text-uagro-navy dark:hover:text-white transition-colors" href="#">Repositorio</a>
+<a class="hover:text-uagro-navy dark:hover:text-white transition-colors" href="#">Instalaciones</a>
+</div>
+<button class="lg:hidden p-2 text-gray-600 dark:text-gray-300">
+<span class="material-icons-round">menu</span>
+</button>
+<div class="hidden md:block pl-2">
+<a class="inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-white transition-all duration-200 bg-uagro-navy dark:bg-white dark:text-uagro-navy rounded-full hover:bg-uagro-navy/90 dark:hover:bg-gray-100 shadow-md" href="#">
+                    Conócenos
+                </a>
+</div>
+</nav>
+<main class="flex flex-col items-center justify-center flex-grow w-full max-w-5xl mx-auto mt-16 md:mt-24 text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 mb-8 text-sm font-medium text-uagro-navy dark:text-gray-200 bg-white/80 dark:bg-gray-800/60 glass rounded-full ring-1 ring-uagro-navy/10 dark:ring-white/10 shadow-sm animate-fade-in-up" style="animation-delay: 100ms;">
+<div class="flex -space-x-2 mr-1">
+<span class="material-icons-round text-uagro-red text-lg">workspace_premium</span>
+</div>
+<span>Programa Acreditado de Calidad</span>
+</div>
+<h1 class="max-w-4xl text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-white leading-[1.1] mb-6 animate-fade-in-up" style="animation-delay: 200ms;">
+                Excelencia en <br class="hidden md:block"/>
+<span class="font-display italic font-normal text-uagro-navy dark:text-blue-100 opacity-90">Gestión de Organizaciones</span>
+</h1>
+<p class="max-w-2xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-10 leading-relaxed font-light text-shadow-sm animate-fade-in-up" style="animation-delay: 300ms;">
+                La Maestría en Gestión de Organizaciones de la UAGro es el sistema operativo académico para líderes modernos — ayudándote a convertir estrategias en resultados tangibles sin el caos.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style="animation-delay: 400ms;">
+<a class="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-white bg-uagro-red rounded-full overflow-hidden transition-all duration-300 hover:shadow-glow-red hover:-translate-y-0.5" href="#">
+<span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
+<span class="relative flex items-center gap-2">
+                        Plan de Estudios
+                        <span class="material-icons-round text-sm transition-transform group-hover:translate-x-1">menu_book</span>
+</span>
+</a>
+<a class="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-white bg-uagro-red rounded-full overflow-hidden transition-all duration-300 hover:shadow-glow-red hover:-translate-y-0.5" href="#">
+<span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
+<span class="relative flex items-center gap-2">
+                        Convocatoria
+                        <span class="material-icons-round text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</span>
+</a>
+</div>
+</main>
+<div class="w-full mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl opacity-0 animate-fade-in-up-delayed" style="animation-fill-mode: forwards;">
+<div class="glass p-6 rounded-2xl bg-white/60 dark:bg-gray-800/40 border border-white/40 dark:border-white/5 hover:bg-white/80 dark:hover:bg-gray-800/60 transition-colors cursor-default group">
+<div class="w-10 h-10 rounded-full bg-uagro-navy/10 flex items-center justify-center mb-4 group-hover:bg-uagro-navy/20 transition-colors">
+<span class="material-icons-round text-2xl text-uagro-navy dark:text-blue-200">school</span>
+</div>
+<h3 class="font-display font-semibold text-lg text-gray-900 dark:text-white">Academia Rigurosa</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Planes de estudio actualizados para los retos globales.</p>
+</div>
+<div class="glass p-6 rounded-2xl bg-white/60 dark:bg-gray-800/40 border border-white/40 dark:border-white/5 hover:bg-white/80 dark:hover:bg-gray-800/60 transition-colors cursor-default group">
+<div class="w-10 h-10 rounded-full bg-uagro-red/10 flex items-center justify-center mb-4 group-hover:bg-uagro-red/20 transition-colors">
+<span class="material-icons-round text-2xl text-uagro-red dark:text-red-200">groups</span>
+</div>
+<h3 class="font-display font-semibold text-lg text-gray-900 dark:text-white">Networking</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Conecta con profesionales líderes en diversos sectores.</p>
+</div>
+<div class="glass p-6 rounded-2xl bg-white/60 dark:bg-gray-800/40 border border-white/40 dark:border-white/5 hover:bg-white/80 dark:hover:bg-gray-800/60 transition-colors cursor-default group">
+<div class="w-10 h-10 rounded-full bg-gray-500/10 flex items-center justify-center mb-4 group-hover:bg-gray-500/20 transition-colors">
+<span class="material-icons-round text-2xl text-gray-700 dark:text-gray-200">lightbulb</span>
+</div>
+<h3 class="font-display font-semibold text-lg text-gray-900 dark:text-white">Innovación</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Herramientas modernas para la gestión eficiente.</p>
+</div>
+</div>
+</div>
+<style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        .animate-fade-in-down {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+        .animate-fade-in-up-delayed {
+            animation: fadeInUp 0.8s ease-out 0.6s forwards;
+        }
+    </style>
+<script>
+        // Simple theme check to support system preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+
+</body></html>

@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.svelte';
+import Footer from '../components/Footer.svelte';
+---
+
+<BaseLayout 
+	title="LIES - Líneas de Investigación - MDO UAGro"
+	description="Conoce las Líneas de Investigación e Incidencia Social del programa de Maestría en Dirección de Organizaciones."
+>
+	<Navbar client:load />
+	
+	<main class="min-h-screen bg-gray-50 py-12">
+		<div class="max-w-6xl mx-auto px-4 sm:px-6">
+			<!-- Page Header -->
+			<div class="text-center mb-12">
+				<div class="inline-flex items-center gap-2 px-3 py-1 rounded-pill bg-uagro-navy/10 text-uagro-navy text-xs font-bold uppercase tracking-wider mb-4">
+					Investigación
+				</div>
+				<h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+					Líneas de Investigación e Incidencia Social
+				</h1>
+				<p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+					Nuestras líneas de investigación están orientadas a generar conocimiento científico que contribuya al desarrollo organizacional y social de la región.
+				</p>
+			</div>
+			
+			<!-- Main Description Card -->
+			<div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12 border border-gray-200">
+				<h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Enfoque de Investigación</h2>
+				<p class="text-lg text-gray-600 leading-relaxed mb-6">
+					El programa cuenta con dos Líneas de Generación y Aplicación del Conocimiento (LGAC) que integran las investigaciones de profesores y estudiantes, orientadas a la comprensión y solución de problemas organizacionales relevantes para el desarrollo regional y nacional.
+				</p>
+				<p class="text-lg text-gray-600 leading-relaxed">
+					Cada línea de investigación está coordinada por profesores con reconocimiento del Sistema Nacional de Investigadores (SNI) y cuenta con proyectos activos financiados por instituciones nacionales e internacionales.
+				</p>
+			</div>
+			
+			<!-- Research Lines -->
+			<div class="grid md:grid-cols-2 gap-8 mb-12">
+				<!-- LGAC 1 -->
+				<div class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-uagro-navy hover:shadow-xl transition-all group">
+					<div class="w-14 h-14 bg-gradient-to-br from-uagro-navy to-uagro-navy/80 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-4">Gestión y desarrollo empresarial</h3>
+					<p class="text-gray-600 mb-4 text-sm leading-relaxed">
+						Esta LIES analiza los factores que limitan el crecimiento, formalización, desarrollo y consolidación de las micro, pequeñas y medianas empresas, ofreciendo alternativas para el mejoramiento de las áreas y los procesos administrativos, mediante la participación e intervención multidisciplinaria.
+					</p>
+					<ul class="text-sm text-gray-600 space-y-2">
+						<li class="flex items-start gap-2">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-uagro-navy shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							Crecimiento y consolidación de MiPyMEs
+						</li>
+						<li class="flex items-start gap-2">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-uagro-navy shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							Mejoramiento de procesos administrativos
+						</li>
+						<li class="flex items-start gap-2">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-uagro-navy shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							Intervención multidisciplinaria
+						</li>
+					</ul>
+				</div>
+				
+				<!-- LGAC 2 -->
+				<div class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-uagro-red hover:shadow-xl transition-all group">
+					<div class="w-14 h-14 bg-gradient-to-br from-uagro-red to-uagro-red-dark rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-4">Intervenciones y gestión para la generación de actividades económicas desde las Organizaciones</h3>
+					<p class="text-gray-600 mb-4 text-sm leading-relaxed">
+						Esta LIES se enfoca en el análisis crítico, diseño, e implementación de estrategias de intervención y modelos de gestión que permiten a las organizaciones fungir como motores efectivos de la generación de valor económico y social en la región de Guerrero.
+					</p>
+					<ul class="text-sm text-gray-600 space-y-2">
+						<li class="flex items-start gap-2">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-uagro-red shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							Estrategias de intervención y modelos de gestión
+						</li>
+						<li class="flex items-start gap-2">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-uagro-red shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							Generación de valor económico y social
+						</li>
+						<li class="flex items-start gap-2">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-uagro-red shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							Desarrollo de la región de Guerrero
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- Indicators -->
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="bg-gradient-to-br from-uagro-navy to-uagro-navy/90 text-white rounded-2xl p-8 text-center">
+					<p class="text-5xl font-extrabold mb-3">30+</p>
+					<p class="text-lg font-semibold opacity-90">Participantes Multidisciplinarios</p>
+				</div>
+				<div class="bg-gradient-to-br from-uagro-red to-uagro-red-dark text-white rounded-2xl p-8 text-center">
+					<p class="text-5xl font-extrabold mb-3">85%</p>
+					<p class="text-lg font-semibold opacity-90">Enfoque Incidencia Social</p>
+				</div>
+				<div class="bg-gradient-to-br from-gray-600 to-gray-700 text-white rounded-2xl p-8 text-center">
+					<p class="text-5xl font-extrabold mb-3">50+</p>
+					<p class="text-lg font-semibold opacity-90">Resultados Publicaciones</p>
+				</div>
+			</div>
+			
+			<!-- Institutional Backing Section -->
+			<div class="mt-16 bg-white rounded-3xl p-10 shadow-lg text-center border border-gray-100">
+				<h2 class="text-xl font-bold text-gray-900 mb-8">Con el respaldo de</h2>
+				<div class="flex flex-wrap items-center justify-center gap-10 opacity-80 hover:opacity-100 transition-opacity duration-300">
+					<img src="/logo-uagro.png" alt="UAGro" class="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all"/>
+					<div class="h-12 w-px bg-gray-200 hidden md:block"></div>
+					<img src="/logo-facultad.png" alt="Facultad de Contaduría y Administración" class="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all"/>
+					<div class="h-12 w-px bg-gray-200 hidden md:block"></div>
+					<img src="/logo-mdo.png" alt="Maestría en Dirección de Organizaciones" class="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all"/>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<Footer client:load />
+</BaseLayout>

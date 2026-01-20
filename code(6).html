@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UAGro Maestría - Perfiles de Ingreso y Egreso</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#325567",
+                        "primary-dark": "#25414f",
+                        "accent": "#c8102e", /* A subtle academic red for UAGro accent */
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#181e2b",
+                        "text-main": "#131516",
+                        "text-secondary": "#6d787e",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                        'inner-glow': 'inset 0 0 20px rgba(50, 85, 103, 0.05)'
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+
+        /* Smooth fade for tab content */
+        .fade-in {
+            animation: fadeIn 0.4s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Custom list style for competencies */
+        .custom-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .custom-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 6px;
+            height: 6px;
+            background-color: #325567;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-white font-display antialiased selection:bg-primary/20 selection:text-primary">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navbar -->
+<header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#e5e7eb] dark:border-gray-800">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-6 lg:px-40 flex flex-1 justify-center py-0">
+<div class="layout-content-container flex w-full max-w-[1200px] flex-1">
+<div class="flex h-[72px] items-center justify-between whitespace-nowrap">
+<!-- Logo Area -->
+<div class="flex items-center gap-3 text-primary dark:text-white group cursor-pointer transition-opacity hover:opacity-80">
+<div class="size-8 rounded bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">school</span>
+</div>
+<div class="flex flex-col">
+<h2 class="text-primary dark:text-white text-base font-bold leading-tight tracking-tight">UAGro</h2>
+<span class="text-xs font-medium text-text-secondary uppercase tracking-widest">Maestría</span>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="hidden lg:flex flex-1 justify-end gap-1">
+<nav class="flex items-center gap-1">
+<a class="px-4 py-2 rounded-full text-primary dark:text-white text-sm font-semibold leading-normal bg-primary/5 hover:bg-primary/10 transition-colors" href="#">Objetivos</a>
+<a class="px-4 py-2 rounded-full text-text-secondary dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors" href="#">Perfiles</a>
+<a class="px-4 py-2 rounded-full text-text-secondary dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors" href="#">Núcleo Académico</a>
+<a class="px-4 py-2 rounded-full text-text-secondary dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors" href="#">LIES</a>
+<a class="px-4 py-2 rounded-full text-text-secondary dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors" href="#">Repositorio</a>
+<a class="px-4 py-2 rounded-full text-text-secondary dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors" href="#">Instalaciones</a>
+<a class="ml-2 px-5 py-2 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary-dark shadow-sm transition-all transform hover:-translate-y-0.5" href="#">Conócenos</a>
+</nav>
+</div>
+<!-- Mobile Menu Icon -->
+<div class="lg:hidden flex items-center">
+<button class="p-2 text-text-secondary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 w-full bg-background-light dark:bg-background-dark relative">
+<!-- Background Elements -->
+<div class="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#325567 1px, transparent 1px); background-size: 32px 32px;">
+</div>
+<div class="relative z-10 px-6 lg:px-40 py-12 lg:py-20 flex justify-center">
+<div class="w-full max-w-[960px] flex flex-col gap-10">
+<!-- Header Section -->
+<div class="text-center space-y-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wide uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                            Gestión de Organizaciones
+                        </span>
+<h1 class="text-4xl lg:text-5xl font-extrabold text-primary dark:text-white tracking-tight">
+                            Objetivos y Perfiles
+                        </h1>
+<p class="text-lg text-text-secondary dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                            Definimos el camino de la excelencia académica desde el primer paso hasta la consolidación profesional.
+                        </p>
+</div>
+<!-- Pill Switcher -->
+<div class="flex justify-center">
+<div class="bg-white dark:bg-gray-800 p-1.5 rounded-full shadow-sm border border-gray-200 dark:border-gray-700 inline-flex relative">
+<!-- Use JS to toggle states in a real app, here we simulate active state with classes -->
+<label class="cursor-pointer relative z-10">
+<input checked="" class="peer sr-only" name="profile_type" type="radio" value="ingreso"/>
+<span class="block px-8 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 peer-checked:bg-primary peer-checked:text-white peer-checked:shadow-md text-text-secondary hover:text-primary dark:text-gray-400 dark:hover:text-white">
+                                    Perfil de Ingreso
+                                </span>
+</label>
+<label class="cursor-pointer relative z-10">
+<input class="peer sr-only" name="profile_type" type="radio" value="egreso"/>
+<span class="block px-8 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 peer-checked:bg-primary peer-checked:text-white peer-checked:shadow-md text-text-secondary hover:text-primary dark:text-gray-400 dark:hover:text-white">
+                                    Perfil de Egreso
+                                </span>
+</label>
+</div>
+</div>
+<!-- Content Card -->
+<div class="bg-white dark:bg-[#1f2937] rounded-2xl shadow-soft border border-gray-100 dark:border-gray-700 overflow-hidden fade-in">
+<div class="flex flex-col md:flex-row">
+<!-- Visual Side / Accent -->
+<div class="w-full md:w-2 bg-gradient-to-b from-primary via-primary to-accent md:h-auto h-2"></div>
+<!-- Text Content -->
+<div class="flex-1 p-8 md:p-12 lg:p-16">
+<div class="flex items-center gap-4 mb-8">
+<div class="p-3 bg-primary/5 rounded-xl text-primary">
+<span class="material-symbols-outlined text-3xl">person_check</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-text-main dark:text-white">Aspirante Ideal</h3>
+<p class="text-sm text-text-secondary font-medium">Requisitos y Cualidades Esperadas</p>
+</div>
+</div>
+<div class="prose prose-lg dark:prose-invert max-w-none text-text-secondary dark:text-gray-300 font-normal leading-loose">
+<p class="mb-8 first-letter:text-3xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left">
+                                        El aspirante a ingresar a la Maestría en Gestión de Organizaciones debe demostrar un profundo interés por el desarrollo de estructuras organizacionales eficientes y sostenibles. Buscamos profesionales con una sólida base ética y capacidad crítica, dispuestos a enfrentar los desafíos contemporáneos de la administración pública y privada.
+                                    </p>
+<h4 class="text-lg font-bold text-primary dark:text-white mb-4 mt-8 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">label_important</span>
+                                        Competencias y Conocimientos Previos
+                                    </h4>
+<ul class="custom-list space-y-3 pl-2">
+<li>
+<strong class="text-text-main dark:text-gray-200">Formación Académica:</strong> 
+                                            Título de licenciatura en áreas económico-administrativas, ingeniería industrial, ciencias sociales o disciplinas afines, con un promedio mínimo de 8.0.
+                                        </li>
+<li>
+<strong class="text-text-main dark:text-gray-200">Habilidades Analíticas:</strong> 
+                                            Capacidad demostrable para el análisis de datos, interpretación de contextos económicos y síntesis de información compleja para la toma de decisiones.
+                                        </li>
+<li>
+<strong class="text-text-main dark:text-gray-200">Compromiso Social:</strong> 
+                                            Evidencia de participación en proyectos o iniciativas que busquen el bienestar común y la responsabilidad social corporativa.
+                                        </li>
+<li>
+<strong class="text-text-main dark:text-gray-200">Dominio Tecnológico:</strong> 
+                                            Manejo competente de herramientas digitales para la gestión, comunicación y análisis estadístico básico.
+                                        </li>
+<li>
+<strong class="text-text-main dark:text-gray-200">Competencia Lingüística:</strong> 
+                                            Comprensión lectora del idioma inglés a nivel técnico, suficiente para abordar literatura académica internacional.
+                                        </li>
+</ul>
+<div class="mt-10 p-6 bg-[#f8fafc] dark:bg-gray-800/50 rounded-xl border border-gray-100 dark:border-gray-700 flex gap-4 items-start">
+<span class="material-symbols-outlined text-accent shrink-0 mt-1">info</span>
+<p class="text-sm italic text-gray-600 dark:text-gray-400 m-0">
+                                            El proceso de selección incluye una entrevista con el comité académico y un examen de conocimientos generales. La actitud proactiva y la capacidad de trabajo en equipos multidisciplinarios serán altamente valoradas durante la evaluación.
+                                        </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Additional Info Cards (Subtle) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+<a class="group block p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all" href="#">
+<div class="flex items-center justify-between mb-3">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">school</span>
+<span class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+<h4 class="font-bold text-lg text-text-main dark:text-white mb-1">Proceso de Admisión</h4>
+<p class="text-sm text-text-secondary">Consulta las fechas, requisitos documentales y pasos a seguir.</p>
+</a>
+<a class="group block p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all" href="#">
+<div class="flex items-center justify-between mb-3">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">download</span>
+<span class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+<h4 class="font-bold text-lg text-text-main dark:text-white mb-1">Descargar Folleto</h4>
+<p class="text-sm text-text-secondary">Obtén el plan de estudios completo en formato PDF.</p>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#f1f3f3] dark:border-gray-800">
+<div class="layout-container flex flex-col">
+<div class="px-6 lg:px-40 py-12 flex justify-center">
+<div class="w-full max-w-[1200px] flex flex-col gap-8">
+<div class="flex flex-wrap gap-8 justify-between items-start">
+<div class="flex flex-col gap-4 max-w-sm">
+<div class="flex items-center gap-3 text-primary dark:text-white">
+<div class="size-8 rounded bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">school</span>
+</div>
+<span class="font-bold text-lg">UAGro Maestría</span>
+</div>
+<p class="text-text-secondary dark:text-gray-400 text-sm leading-relaxed">
+                                    Formando líderes capaces de transformar organizaciones y contribuir al desarrollo sostenible de la región y el país.
+                                </p>
+</div>
+<div class="flex flex-wrap gap-12">
+<div class="flex flex-col gap-3">
+<h5 class="text-text-main dark:text-white font-bold text-sm uppercase tracking-wide">Enlaces</h5>
+<a class="text-text-secondary hover:text-primary dark:text-gray-400 dark:hover:text-white text-sm transition-colors" href="#">Contacto</a>
+<a class="text-text-secondary hover:text-primary dark:text-gray-400 dark:hover:text-white text-sm transition-colors" href="#">Aviso de Privacidad</a>
+<a class="text-text-secondary hover:text-primary dark:text-gray-400 dark:hover:text-white text-sm transition-colors" href="#">Mapa del Sitio</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="text-text-main dark:text-white font-bold text-sm uppercase tracking-wide">Social</h5>
+<a class="text-text-secondary hover:text-primary dark:text-gray-400 dark:hover:text-white text-sm transition-colors flex items-center gap-2" href="#">
+                                        Facebook
+                                    </a>
+<a class="text-text-secondary hover:text-primary dark:text-gray-400 dark:hover:text-white text-sm transition-colors flex items-center gap-2" href="#">
+                                        Twitter
+                                    </a>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-gray-100 dark:bg-gray-800"></div>
+<div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+<p class="text-text-secondary dark:text-gray-500 text-sm">© 2024 Universidad Autónoma de Guerrero. Todos los derechos reservados.</p>
+<div class="flex gap-4">
+<img alt="Logo SEP" class="opacity-50 grayscale hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdHm4FfuiCUb6MMNNDC6nnhC9A5l3SiQUGYgo83RojFO-MMHI47lBXFLVrg_qv6-v5DfZbnwgRX5VJqgwFuKw1sx0zyfAZ3YsHUaYloI046Clpfou6N_H-__wsUbF6k8ldEJy24LGwkUbaf5VP6_nd633dPujlL6uCn-dg2VPl032wj-LPvWipPeQdbRJITkUZ977aF-muEkMScMEM7GEn3HjAd_2evTFdNb7NvN8EubaVL00HnQlBkN_TZIuFo7kFGESAQxWVQG4"/>
+<img alt="Logo CONAHCYT" class="opacity-50 grayscale hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUkrCAHe9g5sJr6bLich-KFHxKIK1T9dm06uOgDN0e0Z1yVjNz0Pm6nnOiLOwTpIIyc620QE-12hW4Kg4wxUEtwL7YO7e8Uh_R14YQUH6Y605LHBbbmpCWn2MlkfLi49XxHodfQtooyD1PaciQlDOWd6PxPk3HxRNKGtBB4uhqtMuMHQr2uYmKC5y3DnxLboxfltYbeDakAd3LFLt6GYhw92mfyZy-dSskwzcpjttZbtg5IpOsUSm9kjb5r3x3-07xVl4l4Ie5d60"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
