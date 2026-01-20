@@ -1,0 +1,59 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"src": "^/_server-islands/([^/]+?)/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/_image/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/conocenos/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/convocatoria/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/instalaciones/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/lies/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/nucleo-academico/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/objetivos/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/plan-de-estudios/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/repositorio/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/$",
+			"dest": "_render"
+		}
+	]
+}

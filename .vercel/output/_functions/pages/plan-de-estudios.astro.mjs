@@ -1,0 +1,61 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_ylGHJKb9.mjs';
+import 'piccolore';
+import { $ as $$BaseLayout, N as Navbar, F as Footer } from '../chunks/Footer_CLSMih39.mjs';
+export { r as renderers } from '../chunks/_@astro-renderers_e8tZXpDX.mjs';
+
+const $$PlanDeEstudios = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Plan de Estudios - MDO UAGro", "description": "Conoce el plan de estudios de la Maestr\xEDa en Direcci\xF3n de Organizaciones de la UAGro." }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Navbar", Navbar, { "client:load": true, "client:component-hydration": "load", "client:component-path": "C:/Users/Luis/Desktop/Pagina Maestria Alt/src/components/Navbar.svelte", "client:component-export": "default" })} ${maybeRenderHead()}<main class="min-h-screen bg-white py-20"> <div class="max-w-7xl mx-auto px-6 sm:px-8"> <!-- Page Header --> <div class="mb-20"> <div class="inline-block px-3 py-1 bg-corporate-black text-white text-xs font-bold uppercase tracking-widest mb-6">
+Programa Académico
+</div> <h1 class="text-5xl md:text-6xl font-display font-bold text-corporate-black mb-8 leading-tight">
+Plan de Estudios
+</h1> <p class="text-xl text-gray-500 max-w-3xl leading-relaxed font-light border-l-4 border-uagro-red pl-6">
+El programa de Maestría en Dirección de Organizaciones está
+					estructurado en 4 semestres con un total de 141 créditos,
+					combinando formación teórica, investigación aplicada y
+					desarrollo de competencias directivas.
+</p> </div> <!-- Program Overview --> <div class="grid md:grid-cols-3 gap-0 border-y border-gray-200 divide-y md:divide-y-0 md:divide-x divide-gray-200 mb-20 bg-gray-50"> <div class="p-12 text-center group hover:bg-white transition-colors"> <div class="w-16 h-16 text-uagro-navy mx-auto mb-6 group-hover:scale-110 transition-transform"> <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path> </svg> </div> <p class="text-5xl font-display font-bold text-corporate-black mb-3 group-hover:text-uagro-red transition-colors relative inline-block">
+4
+</p> <p class="text-xs text-gray-400 font-bold uppercase tracking-[0.2em] mt-2">
+Semestres
+</p> </div> <div class="p-12 text-center group hover:bg-white transition-colors"> <div class="w-16 h-16 text-uagro-red mx-auto mb-6 group-hover:scale-110 transition-transform"> <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path> </svg> </div> <p class="text-5xl font-display font-bold text-corporate-black mb-3 group-hover:text-uagro-red transition-colors">
+141
+</p> <p class="text-xs text-gray-400 font-bold uppercase tracking-[0.2em] mt-2">
+Créditos Totales
+</p> </div> <div class="p-12 text-center group hover:bg-white transition-colors"> <div class="w-16 h-16 text-gray-600 mx-auto mb-6 group-hover:scale-110 transition-transform"> <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path> </svg> </div> <p class="text-5xl font-display font-bold text-corporate-black mb-3 group-hover:text-uagro-red transition-colors">
+2
+</p> <p class="text-xs text-gray-400 font-bold uppercase tracking-[0.2em] mt-2">
+Años de Duración
+</p> </div> </div> <!-- Curriculum by Semester --> <div class="space-y-12 mb-20"> <h2 class="text-3xl font-display font-bold text-corporate-black text-center mb-12">
+Mapa Curricular
+</h2> <div class="grid md:grid-cols-2 gap-8"> <!-- Semester 1 --> <div class="bg-corporate-gray-100 p-8 border-t-4 border-uagro-navy"> <div class="flex items-center justify-between mb-8"> <h3 class="text-2xl font-display font-bold text-corporate-black">
+Primer Semestre
+</h3> <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Etapa Básica</span> </div> <ul class="space-y-4"> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Dirección y liderazgo organizacional</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Diseño organizacional</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Mercadotecnia</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Trabajo de Grado I</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> </ul> </div> <!-- Semester 2 --> <div class="bg-corporate-gray-100 p-8 border-t-4 border-uagro-navy"> <div class="flex items-center justify-between mb-8"> <h3 class="text-2xl font-display font-bold text-corporate-black">
+Segundo Semestre
+</h3> <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Etapa Intermedia</span> </div> <ul class="space-y-4"> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Métodos y procesos administrativos</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Optativa I</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Estancia profesional I</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">18 CR</span> </li> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Trabajo de Grado II</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> </ul> </div> <!-- Semester 3 --> <div class="bg-corporate-gray-100 p-8 border-t-4 border-uagro-red"> <div class="flex items-center justify-between mb-8"> <h3 class="text-2xl font-display font-bold text-corporate-black">
+Tercer Semestre
+</h3> <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Etapa Avanzada</span> </div> <ul class="space-y-4"> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Optativa II</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Estancia profesional II</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">18 CR</span> </li> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Trabajo de grado III</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> </ul> </div> <!-- Semester 4 --> <div class="bg-corporate-gray-100 p-8 border-t-4 border-uagro-red"> <div class="flex items-center justify-between mb-8"> <h3 class="text-2xl font-display font-bold text-corporate-black">
+Cuarto Semestre
+</h3> <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Etapa Terminal</span> </div> <ul class="space-y-4"> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Optativa III</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Trabajo de Grado IV</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">8 CR</span> </li> <li class="flex items-start justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0"> <span class="font-bold text-gray-800 text-sm uppercase tracking-wide">Retribución social</span> <span class="text-xs font-mono text-gray-500 shrink-0 ml-4">18 CR</span> </li> </ul> </div> </div> </div> <!-- Download Section --> <div class="bg-corporate-black text-white p-12 md:p-16 text-center relative overflow-hidden"> <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]"></div> <div class="relative z-10"> <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">
+Descarga el Plan de Estudios Completo
+</h2> <p class="text-gray-400 mb-10 max-w-2xl mx-auto font-light text-lg">
+Obtén información detallada sobre las materias, sus
+						contenidos y los objetivos de aprendizaje de cada
+						asignatura.
+</p> <a href="#" class="inline-flex items-center gap-3 bg-white text-corporate-black font-bold uppercase tracking-widest py-4 px-10 hover:bg-uagro-red hover:text-white transition-all duration-300"> <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path> </svg>
+Descargar PDF
+</a> </div> </div> </div> </main> ${renderComponent($$result2, "Footer", Footer, { "client:load": true, "client:component-hydration": "load", "client:component-path": "C:/Users/Luis/Desktop/Pagina Maestria Alt/src/components/Footer.svelte", "client:component-export": "default" })} ` })}`;
+}, "C:/Users/Luis/Desktop/Pagina Maestria Alt/src/pages/plan-de-estudios.astro", void 0);
+
+const $$file = "C:/Users/Luis/Desktop/Pagina Maestria Alt/src/pages/plan-de-estudios.astro";
+const $$url = "/plan-de-estudios";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	default: $$PlanDeEstudios,
+	file: $$file,
+	url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
