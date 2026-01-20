@@ -29,47 +29,123 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Blog Posts",
-        path: "content/posts",
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "datetime",
-            name: "date",
-            label: "Date",
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
-        ],
-      },
-      {
         name: "page",
-        label: "Pages",
-        path: "content/pages",
+        label: "Páginas",
+        path: "src/content/pages",
+        format: "md",
         fields: [
           {
             type: "string",
             name: "title",
-            label: "Title",
+            label: "Título",
             isTitle: true,
             required: true,
           },
           {
+            type: "string",
+            name: "description",
+            label: "Descripción",
+          },
+          {
+            type: "string",
+            name: "badge",
+            label: "Badge (Solo para Home)",
+          },
+          {
+            type: "string",
+            name: "heroTitle",
+            label: "Título Hero (Solo para Home)",
+          },
+          {
+            type: "string",
+            name: "heroSubtitle",
+            label: "Subtítulo Hero (Solo para Home)",
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "object",
+            name: "primaryCTA",
+            label: "Botón Principal (Solo para Home)",
+            fields: [
+              {
+                type: "string",
+                name: "text",
+                label: "Texto",
+              },
+              {
+                type: "string",
+                name: "href",
+                label: "URL",
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "secondaryCTA",
+            label: "Botón Secundario (Solo para Home)",
+            fields: [
+              {
+                type: "string",
+                name: "text",
+                label: "Texto",
+              },
+              {
+                type: "string",
+                name: "href",
+                label: "URL",
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "features",
+            label: "Características (Solo para Home)",
+            list: true,
+            fields: [
+              {
+                type: "string",
+                name: "icon",
+                label: "Icono (emoji)",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Título",
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Descripción",
+                ui: {
+                  component: "textarea",
+                },
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "stats",
+            label: "Estadísticas (Solo para Home)",
+            list: true,
+            fields: [
+              {
+                type: "string",
+                name: "number",
+                label: "Número",
+              },
+              {
+                type: "string",
+                name: "label",
+                label: "Etiqueta",
+              },
+            ],
+          },
+          {
             type: "rich-text",
             name: "body",
-            label: "Body",
+            label: "Contenido",
             isBody: true,
           },
         ],
