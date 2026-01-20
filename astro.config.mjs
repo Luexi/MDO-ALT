@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://mdo-steel.vercel.app',
-  output: 'hybrid',
+  output: 'static',
   adapter: vercel({
     webAnalytics: {
       enabled: true,
