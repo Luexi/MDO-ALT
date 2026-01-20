@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import vercel from '@astrojs/vercel';
 import svelte from '@astrojs/svelte';
 import tailwindcss from '@tailwindcss/vite';
 
@@ -7,13 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://mdo-steel.vercel.app',
   output: 'static',
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
   integrations: [svelte()],
-
   vite: {
     plugins: [tailwindcss()]
   }
